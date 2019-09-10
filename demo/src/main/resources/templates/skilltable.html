@@ -1,0 +1,1100 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>skilltable</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--&lt;!&ndash;action="@{/recommandjob}" method="post"&ndash;&gt;-->
+<!--<form th:action="@{/skillName}" method="post">-->
+<!--    <p><input type="checkbox" name="vehicle" value="65"/> 架构设计</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="115"/> HTTP</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="28"/> 数据结构</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="145"/> LINUX</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="136"/> 驱动</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="50"/> MVC</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="130"/> MFC</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="7"/> REDIS</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="113"/> SQL</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="42"/> SPRING</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="56"/> 服务器</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="64"/> KAFKA</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="120"/> 微信</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="160"/> SPARK</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="53"/> PYTHON</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="90"/> MONGODB</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="103"/> 维护</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="9"/> 图像</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="125"/> 协议</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="142"/> VUE</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="76"/> ORACLE</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="49"/> PHP</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="16"/> TCP</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="162"/> 算法</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="51"/> DSP</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="98"/> UI</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="144"/> ANGULAR</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="66"/> REACT</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="112"/> 数学</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="61"/> C#</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="111"/> AI</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="127"/> WEB</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="140"/> ARM</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="79"/> 数据挖掘</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="52"/> JAVASCRIPT</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="114"/> SHELL</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="82"/> SQLSERVER</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="94"/> 数据分析</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="95"/> AJAX</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="87"/> QT</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="44"/> VB</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="11"/> 人工智能</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="164"/> 建模</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="67"/> JAVA</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="35"/> 模式识别</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="151"/> 分布式</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="1"/> HADOOP</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="41"/> CSS</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="153"/> NET</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="132"/> 跨平台</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="2"/> 机器人</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="97"/> UNITY</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="47"/> 操作系统</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="39"/> IO</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="141"/> OA</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="110"/> BUG</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="26"/> 游戏</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="24"/> 视觉</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="73"/> SDK</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="30"/> HBASE</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="20"/> IOS</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="27"/> SOCKET</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="55"/> 嵌入式</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="17"/> 电子</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="86"/> 硬件</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="4"/> JQUERY</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="60"/> 手机</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="19"/> 架构</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="108"/> 后端</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="12"/> WPF</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="40"/> 前端</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="78"/> 多线程</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="124"/> 数据库</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="129"/> C++</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="14"/> IP</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="154"/> C语言</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="104"/> 内存</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="119"/> MYBATIS</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="62"/> WINDOWS</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="48"/> ASP</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="89"/> BOOTSTRAP</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="137"/> 图形学</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="34"/> PL</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="158"/> 通讯</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="77"/> MYSQL</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="118"/> APP</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="25"/> ANDROID</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="83"/> ORM</p>-->
+<!--    <p><input type="checkbox" name="vehicle" value="43"/> 单片机</p>-->
+
+<!--    <input type="submit" value="Submit"/>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png"/>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+    <title>Paper Bootstrap Wizard by Creative Tim</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/paper-bootstrap-wizard.css" rel="stylesheet"/>
+
+
+    <!-- Fonts and Icons -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/iconfont.css" rel="stylesheet">
+
+</head>
+
+<!-- Header -->
+
+<!--</header>-->
+
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                <div class="header_extra  ">
+                    <div class="homelogo">
+                        <a th:href="@{/index}">
+                            <div class="icon_box_image2 "><img src="images/Cat.svg" alt=""></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="back">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-14 ">
+
+                <!--      Wizard container        -->
+                <div class="wizard-container">
+                    <div class="card wizard-card" data-color="blue" id="wizard">
+                        <form th:action="@{/skillName}" method="post">
+                            <!--        You can switch " data-color="green" "  with one of the next bright colors: "blue", "azure", "orange", "red"       -->
+
+                            <div class="wizard-header">
+                                <h3 class="wizard-title">开始选择吧</h3>
+                                <p class="category">点击你擅长的模块！</p>
+                            </div>
+                            <div class="wizard-navigation">
+                                <div class="progress-with-circle">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1"
+                                         aria-valuemax="5" style="width: 15%;"></div>
+                                </div>
+                                <ul>
+
+
+                                    <li>
+                                        <a href="#type1" data-toggle="tab">
+                                            <div class="icon-circle">
+                                                <i class="ti-layout-slider"></i>
+                                            </div>
+                                            语言
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#type2" data-toggle="tab">
+                                            <div class="icon-circle">
+                                                <i class="ti-move"></i>
+                                            </div>
+                                            方向
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#type3" data-toggle="tab">
+                                            <div class="icon-circle">
+                                                <i class="ti-hummer"></i>
+                                            </div>
+                                            技能
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#type4" data-toggle="tab">
+                                            <div class="icon-circle">
+                                                <i class="ti-plus"></i>
+                                            </div>
+                                            框架
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#type5" data-toggle="tab">
+                                            <div class="icon-circle">
+                                                <i class="ti-star"></i>
+                                            </div>
+                                            其它
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content">
+                                <div class="tab-pane" id="type1">
+                                    <div class="row">
+                                        <div class="col-sm-12 ">
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="34">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">PL</i>
+                                                        <p>PL</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="67">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-java"></i>
+                                                        <p>Java</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="49">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-php"></i>
+                                                        <p>PHP</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="61">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">C#</i>
+                                                        <p>C#</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="154">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-C">C</i>
+                                                        <p>C</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="113">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-sql"></i>
+                                                        <p>SQL</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="129">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">C++</i>
+                                                        <p>C++</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="41">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-css"></i>
+                                                        <p>CSS</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="53">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-python"></i>
+                                                        <p>Python</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="52">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-logo-javascript"></i>
+                                                        <p>JavaScript</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="114">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-fileshell"></i>
+                                                        <p>Shell</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="44">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">VB</i>
+                                                        <p>VB</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="type2">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="158">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-comments"></i>
+                                                        <p>通讯</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="35">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-view-grid"></i>
+                                                        <p>模式识别</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="24">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-eye"></i>
+                                                        <p>视觉</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="2">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-reddit"></i>
+                                                        <p>机器人</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="11">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-flickr-alt"></i>
+                                                        <p>人工智能</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="78">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-direction-alt"></i>
+                                                        <p>多线程</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="47">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-desktop"></i>
+                                                        <p>操作系统</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="40">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-shift-left"></i>
+                                                        <p>前端开发</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="86">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-harddrives"></i>
+                                                        <p>硬件</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="127">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-world"></i>
+                                                        <p>Web</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="26">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-game"></i>
+                                                        <p>游戏</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="145">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-linux"></i>
+                                                        <p>Linux</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="62">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-microsoft-alt"></i>
+                                                        <p>Windows</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="76">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">oracle</i>
+                                                        <p>Oracle</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="9">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-gallery"></i>
+                                                        <p>图像</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="108">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-shift-right"></i>
+                                                        <p>后端</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="20">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-apple"></i>
+                                                        <p>IOS</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="25">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-android"></i>
+                                                        <p>Andriod</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="19">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-layout-grid2-thumb"></i>
+                                                        <p>架构</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="124">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-layout-tab"></i>
+                                                        <p>数据库</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="28">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-fullscreen"></i>
+                                                        <p>数据结构</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="43">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-control-stop"></i>
+                                                        <p>单片机</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="137">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-image"></i>
+                                                        <p>图形学</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="type3">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="7">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-db_redis_instance"></i>
+                                                        <p>Redis</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="30">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-db_hbase_cluster"></i>
+                                                        <p>HBase</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="97">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-unity"></i>
+                                                        <p>Unity</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="118">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-APP"></i>
+                                                        <p>App</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="115">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-http-"></i>
+                                                        <p>Http</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="4">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-jquery"></i>
+                                                        <p>jQuery</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="77">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-shujukuleixingtubiao-kuozhan-"></i>
+                                                        <p>MySQL</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="111">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-wuguan"></i>
+                                                        <p>AI</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="94">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-bar-chart"></i>
+                                                        <p>数据分析</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="79">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-shujuwajue"></i>
+                                                        <p>数据挖掘</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="48">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">ASP</i>
+                                                        <p>ASP</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="153">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-net"></i>
+                                                        <p>.NET</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="83">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">ORM</i>
+                                                        <p>ORM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="73">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">SDK</i>
+                                                        <p>SDK</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="95">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">AJAX</i>
+                                                        <p>AJAX</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="64">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-kafkajieruzujian"></i>
+                                                        <p>KAFKA</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="162">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-pencil-alt"></i>
+                                                        <p>算法</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="164">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-shujujianmo"></i>
+                                                        <p>建模</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="50">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">MVC</i>
+                                                        <p>MVC</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="130">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">MFC</i>
+                                                        <p>MFC</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="112">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-shuxue"></i>
+                                                        <p>数学</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="90">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-mongodb"></i>
+                                                        <p>MongoDB</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="82">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-SqlServer"></i>
+                                                        <p>SQLserver</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="65">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-zuzhijiagou-"></i>
+                                                        <p>架构设计</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="type4">
+                                    <div class="row">
+                                        <div class="col-sm-12 ">
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="12">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">WPF</i>
+                                                        <p>WPF</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="66">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-react"></i>
+                                                        <p>React</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="142">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-vuejs"></i>
+                                                        <p>Vue</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="119">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">MyBatis</i>
+                                                        <p>MyBatis</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="144">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-angular"></i>
+                                                        <p>Angular</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="1">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-hadoop29"></i>
+                                                        <p>Hadoop</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="89">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-bootstrap"></i>
+                                                        <p>BootStrap</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="42">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-spring">Spring</i>
+                                                        <p>Spring</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="160">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-spark"></i>
+                                                        <p>Spark</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="87">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="">Qt</i>
+                                                        <p>Qt</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="type5">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="51">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-panel"></i>
+                                                        <p>DSP</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="141">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-credit-card"></i>
+                                                        <p>OA</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="16">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-arrows-horizontal"></i>
+                                                        <p>TCP</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="140">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-layout-media-overlay"></i>
+                                                        <p>ARM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="27">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-plug"></i>
+                                                        <p>Socket</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="132">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-split-h"></i>
+                                                        <p>跨平台</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="17">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-shine"></i>
+                                                        <p>电子</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="103">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-settings"></i>
+                                                        <p>维护</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="56">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-server"></i>
+                                                        <p>服务器</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="151">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-layout-column4-alt"></i>
+                                                        <p>分布式</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="110">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-bug"></i>
+                                                        <p>BUG</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="120">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="icon-weixin"></i>
+                                                        <p>微信</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="104">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-save"></i>
+                                                        <p>内存</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="136">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-save-alt"></i>
+                                                        <p>驱动</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="14">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-signal"></i>
+                                                        <p>IP</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="55">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-layout-sidebar-left"></i>
+                                                        <p>嵌入式</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-2 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="39">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-exchange-vertical"></i>
+                                                        <p>IO</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 ">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="98">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-layout-cta-btn-left"></i>
+                                                        <p>UI</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="125">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-bookmark-alt"></i>
+                                                        <p>协议</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="choice" data-toggle="wizard-checkbox">
+                                                    <input type="checkbox" name="vehicle" value="60">
+                                                    <div class="card card-checkboxes card-hover-effect">
+                                                        <i class="ti-mobile"></i>
+                                                        <p>手机</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wizard-footer">
+                                    <div class="pull-right">
+                                        <input type='button' class='btn btn-next btn-fill btn-success btn-wd'
+                                               name='next' value='Next'/>
+                                        <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd'
+                                               name='finish' value='Finish'/>
+                                    </div>
+
+                                    <div class="pull-left">
+                                        <input type='button' class='btn btn-previous btn-default btn-wd' name='previous'
+                                               value='Previous'/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div> <!-- wizard container -->
+            </div>
+        </div> <!-- row -->
+    </div> <!--  big container -->
+
+</div>
+</div>
+</body>
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+
+</html>

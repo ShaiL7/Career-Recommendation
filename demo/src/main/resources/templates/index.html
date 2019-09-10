@@ -1,0 +1,343 @@
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>首页</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1> <span th:text="${result}"></span></h1>-->
+<!--<h1>欢迎 ： <span  th:text="${session.user}?${session.user.getUsername()}:'（您未登录）'" ></span> </h1>-->
+<!--<a th:href="@{/register}">点击注册</a>-->
+<!--<a th:href="@{/login}" th:if="${session.user==null}">点击登录</a>-->
+<!--<a th:href="@{/loginOut}" th:unless="${session.user==null}">退出登陆</a>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>主页</title>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="description" content="Sublime project">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">-->
+<!--    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+<!--    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="styles/responsive.css">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div class="super_container">-->
+
+<!--    &lt;!&ndash; Header &ndash;&gt;-->
+
+<!--    <header class="header">-->
+<!--        <div class="header_container">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-12">-->
+<!--                        <div class="header_content d-flex flex-row align-items-center justify-content-start">-->
+<!--                            <img src="images/1副本.png" class="xxx">-->
+<!--                            <nav class="main_nav">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="index.html">主页</a></li>-->
+<!--                                </ul>-->
+<!--                            </nav>-->
+<!--                            <div class="header_extra ml-auto ">-->
+<!--                                <div class="login">-->
+<!--                                    <a th:href ="${session.user}? @{/loginOut} : @{/login} ">-->
+<!--                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                             viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">-->
+<!--											<g>-->
+<!--												<path xmlns="http://www.w3.org/2000/svg" d="M512 549.12c-116.89984 0-211.69152-94.79168-211.69152-211.69152S395.10016 125.7472 512 125.7472s211.69152 94.79168 211.69152 211.69152S628.89984 549.12 512 549.12zM512 187.392a148.48 148.48 0 1 0 148.48 148.48 148.3264 148.3264 0 0 0-148.48-148.48z m0 0" fill="#68b3c8"></path>-->
+<!--                                                <path xmlns="http://www.w3.org/2000/svg" d="M164.4544 898.2528a31.744 31.744 0 0 1-31.60064-31.60064c0-208.52736 170.61888-379.14624 379.14624-379.14624 34.75456 0 118.4768 17.408 150.07744 31.5904 15.80032 7.90528 26.85952 22.1184 22.1184 39.49568s-23.69536 30.01344-39.49568 22.1184c-26.85952-12.62592-104.26368-28.42624-132.70016-28.42624-173.7728 0-315.9552 142.1824-315.9552 315.9552 0 15.80032-14.22336 30.01344-31.60064 30.01344z m0 0" fill="#68b3c8"></path>-->
+<!--                                                <path xmlns="http://www.w3.org/2000/svg" d="M859.5456 898.2528a31.744 31.744 0 0 1-31.5904-31.60064c0-126.38208-74.25024-240.128-191.15008-290.68288-15.80032-6.31808-23.69536-25.27232-15.80032-41.07264 6.31808-15.80032 25.27232-23.69536 41.07264-15.80032 139.01824 60.03712 229.0688 197.46816 229.0688 347.55584a31.744 31.744 0 0 1-31.60064 31.60064z m0 0" fill="#FC7265"></path>-->
+<!--											</g>-->
+<!--										</svg>-->
+<!--                                        <div><span  th:text="${session.user}?'注销':'登陆'" ></span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                <div class="register">-->
+<!--                                    <a th:href="@{/register}"  th:if="${session.user==null}">-->
+<!--                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                             viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">-->
+<!--											<g>-->
+<!--												<path xmlns="http://www.w3.org/2000/svg" d="M530.16576 549.12C413.26592 549.12 318.464 454.33856 318.464 337.42848S413.26592 125.7472 530.16576 125.7472s211.69152 94.79168 211.69152 211.69152-94.79168 211.68128-211.69152 211.68128z m0-361.76896a148.48 148.48 0 1 0 148.48 148.48c0-80.56832-66.34496-148.48-148.48-148.48z m0 0" fill="#68b3c8"></path>-->
+<!--                                                <path xmlns="http://www.w3.org/2000/svg" d="M182.62016 898.2528a31.744 31.744 0 0 1-31.60064-31.60064c0-208.52736 170.61888-379.14624 379.14624-379.14624a31.5904 31.5904 0 0 1 0 63.19104c-173.7728 0-315.9552 142.1824-315.9552 315.9552a31.744 31.744 0 0 1-31.60064 31.60064z m0 0" fill="#68b3c8"></path>-->
+<!--                                                <path xmlns="http://www.w3.org/2000/svg" d="M841.37984 756.08064H598.09792a31.60064 31.60064 0 1 1 0-63.19104h243.28192a31.60064 31.60064 0 0 1 0 63.19104z m0 0" fill="#FC7265"></path>-->
+<!--                                                <path xmlns="http://www.w3.org/2000/svg" d="M719.73888 877.71136A31.68256 31.68256 0 0 1 688.128 846.12096V602.83904a31.60064 31.60064 0 1 1 63.19104 0v243.28192a31.744 31.744 0 0 1-31.5904 31.60064z m0 0" fill="#FC7265"></path>-->
+<!--											</g>-->
+<!--										</svg>-->
+<!--                                        <div>注册</div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </header>-->
+
+
+<!--    <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>-->
+
+<!--    <div class="menu_social">-->
+<!--        <ul>-->
+<!--            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
+<!--            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+<!--            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+<!--            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Home &ndash;&gt;-->
+
+<!--<div class="home">-->
+<!--    <div class="home_slider_container">-->
+<!--        <div class="footer_background" style="background-image:url(images/footer.jpg)"></div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="footer_overlay"></div>-->
+<!--<footer class="footer"  th:if="${session.user!=null}">-->
+<!--    <div class="footer_background1" style="background-image:url()"></div>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col">-->
+<!--                    <div class="footer_logo"><a href="#"></a></div>-->
+<!--                </div>-->
+<!--                <div class="button button_light home_button"><a th:href="@{/skill}">点击开始</a></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--</div>-->
+
+<!--<script src="js/jquery-3.2.1.min.js"></script>-->
+<!--<script src="styles/bootstrap4/popper.js"></script>-->
+<!--<script src="styles/bootstrap4/bootstrap.min.js"></script>-->
+<!--<script src="plugins/greensock/TweenMax.min.js"></script>-->
+<!--<script src="plugins/greensock/TimelineMax.min.js"></script>-->
+<!--<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>-->
+<!--<script src="plugins/greensock/animation.gsap.min.js"></script>-->
+<!--<script src="plugins/greensock/ScrollToPlugin.min.js"></script>-->
+<!--<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>-->
+<!--<script src="plugins/Isotope/isotope.pkgd.min.js"></script>-->
+<!--<script src="plugins/easing/easing.js"></script>-->
+<!--<script src="plugins/parallax-js-master/parallax.min.js"></script>-->
+<!--<script src="js/custom.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sublime</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sublime project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- Header -->
+
+    <header class="header">
+        <div class="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="header_extra ">
+                                <a th:href="@{/index}">
+                                    <div class="icon_box_image2 "><img src="images/Cat.svg" alt=""></div>
+                                </a>
+                            </div>
+
+                            <div class="login ml-auto">
+                                <a th:href ="${session.user}? @{/loginOut} : @{/login} ">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;"
+                                         xml:space="preserve">
+											<g>
+												<path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M512 549.12c-116.89984 0-211.69152-94.79168-211.69152-211.69152S395.10016 125.7472 512 125.7472s211.69152 94.79168 211.69152 211.69152S628.89984 549.12 512 549.12zM512 187.392a148.48 148.48 0 1 0 148.48 148.48 148.3264 148.3264 0 0 0-148.48-148.48z m0 0"
+                                                      fill="#68b3c8"></path>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M164.4544 898.2528a31.744 31.744 0 0 1-31.60064-31.60064c0-208.52736 170.61888-379.14624 379.14624-379.14624 34.75456 0 118.4768 17.408 150.07744 31.5904 15.80032 7.90528 26.85952 22.1184 22.1184 39.49568s-23.69536 30.01344-39.49568 22.1184c-26.85952-12.62592-104.26368-28.42624-132.70016-28.42624-173.7728 0-315.9552 142.1824-315.9552 315.9552 0 15.80032-14.22336 30.01344-31.60064 30.01344z m0 0"
+                                                      fill="#68b3c8"></path>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M859.5456 898.2528a31.744 31.744 0 0 1-31.5904-31.60064c0-126.38208-74.25024-240.128-191.15008-290.68288-15.80032-6.31808-23.69536-25.27232-15.80032-41.07264 6.31808-15.80032 25.27232-23.69536 41.07264-15.80032 139.01824 60.03712 229.0688 197.46816 229.0688 347.55584a31.744 31.744 0 0 1-31.60064 31.60064z m0 0"
+                                                      fill="#FC7265"></path>
+											</g>
+										</svg>
+                                    <div><span  th:text="${session.user}?'注销':'登陆'" ></span></div>
+                                </a>
+                            </div>
+                            <div class="register">
+                                <a th:href="@{/register}"  th:if="${session.user==null}">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;"
+                                         xml:space="preserve">
+											<g>
+												<path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M530.16576 549.12C413.26592 549.12 318.464 454.33856 318.464 337.42848S413.26592 125.7472 530.16576 125.7472s211.69152 94.79168 211.69152 211.69152-94.79168 211.68128-211.69152 211.68128z m0-361.76896a148.48 148.48 0 1 0 148.48 148.48c0-80.56832-66.34496-148.48-148.48-148.48z m0 0"
+                                                      fill="#68b3c8"/>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M182.62016 898.2528a31.744 31.744 0 0 1-31.60064-31.60064c0-208.52736 170.61888-379.14624 379.14624-379.14624a31.5904 31.5904 0 0 1 0 63.19104c-173.7728 0-315.9552 142.1824-315.9552 315.9552a31.744 31.744 0 0 1-31.60064 31.60064z m0 0"
+                                                      fill="#68b3c8"/>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M841.37984 756.08064H598.09792a31.60064 31.60064 0 1 1 0-63.19104h243.28192a31.60064 31.60064 0 0 1 0 63.19104z m0 0"
+                                                      fill="#FC7265"/>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M719.73888 877.71136A31.68256 31.68256 0 0 1 688.128 846.12096V602.83904a31.60064 31.60064 0 1 1 63.19104 0v243.28192a31.744 31.744 0 0 1-31.5904 31.60064z m0 0"
+                                                      fill="#FC7265"/>
+											</g>
+										</svg>
+                                    <div>注册</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Home -->
+
+    <div class="home">
+        <div class="home_slider_container">
+
+            <!-- Home Slider -->
+            <div class="owl-carousel owl-theme home_slider">
+
+                <!-- Slider Item -->
+                <div class="owl-item home_slider_item">
+                    <div class="home_slider_background" style="background-image:url(images/footer.jpg)"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Icon Boxes -->
+
+    <div class="icon_boxes">
+        <div class="container">
+            <div class="row icon_box_row">
+
+                <!-- Icon Box -->
+                <div class="col-lg-4 icon_box_col">
+                    <div class="icon_box">
+                        <div class="icon_box_image"><img src="images/icon_1.svg" alt=""></div>
+                        <div class="icon_box_title">大数据分析</div>
+                        <div class="icon_box_text">
+                            <p>海量的数据分析，提供更可靠的结果</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icon Box -->
+                <div class="col-lg-4 icon_box_col">
+                    <div class="icon_box">
+                        <div class="icon_box_image"><img src="images/icon_2.svg" alt=""></div>
+                        <div class="icon_box_title">数据可视化</div>
+                        <div class="icon_box_text">
+                            <p>图形化界面操作，分析结果一目了然</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icon Box -->
+                <div class="col-lg-4 icon_box_col">
+                    <div class="icon_box">
+                        <div class="icon_box_image"><img src="images/icon_3.svg" alt=""></div>
+                        <div class="icon_box_title">智能推荐</div>
+                        <div class="icon_box_text">
+                            <p>计算机分析结合人工校准，提供更精确的推荐</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+
+    <div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="newsletter_border"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="newsletter_content text-center">
+                        <div class="newsletter_title">开始你的职业规划吧！</div>
+                        <div class="newsletter_text"><p>登陆后即可开始</p></div>
+                        <div class="newsletter_form_container">
+                            <form th:action="@{/skill}" id="newsletter_form" class="newsletter_form" th:unless="${session.user==null}">
+                                <button class="newsletter_button trans_200"><span>点击开始</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer_overlay"></div>
+    <footer class="footer">
+        <div class="footer_background" style="background-image:url(images/foot.jpg)"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                        <div class="footer_logo"><a href="#">Cat</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

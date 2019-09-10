@@ -1,0 +1,120 @@
+<!--register.html-->
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>欢迎注册</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>欢迎注册</h1>-->
+<!--<form th:action="@{/register}" th:object="${user}" method="post">-->
+<!--    <label for="username">username:</label>-->
+<!--    <input type="text" id="username" name="username"/>-->
+<!--    <label for="password">password:</label>-->
+<!--    <input type="text" id="password" name="password"/>-->
+<!--    <input type="submit" value="submit">-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>注册</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sublime project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+</head>
+<script language="JavaScript" type="text/JavaScript">
+    <!--
+    function check(form){
+        //检查姓名是否填写
+        var username = form.username.value;
+        var password = form.password.value;
+        if(username.length==0 || password.length==0){
+            alert("用户名或密码不能为空！");
+            form.username.focus();
+            return false;
+        }
+    }
+    //-->
+</script>
+<body>
+
+<div class="super_container">
+
+
+    <!-- Contact -->
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+
+                <!-- Get in touch -->
+                <div class="col-lg-5 back">
+                    <div class="get_in_touch">
+                        <h4 class="section_title">
+                            <div class="col-lg-4 logox">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;"
+                                     xml:space="preserve">
+											<g>
+												<path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M530.16576 549.12C413.26592 549.12 318.464 454.33856 318.464 337.42848S413.26592 125.7472 530.16576 125.7472s211.69152 94.79168 211.69152 211.69152-94.79168 211.68128-211.69152 211.68128z m0-361.76896a148.48 148.48 0 1 0 148.48 148.48c0-80.56832-66.34496-148.48-148.48-148.48z m0 0"
+                                                      fill="#68b3c8"/>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M182.62016 898.2528a31.744 31.744 0 0 1-31.60064-31.60064c0-208.52736 170.61888-379.14624 379.14624-379.14624a31.5904 31.5904 0 0 1 0 63.19104c-173.7728 0-315.9552 142.1824-315.9552 315.9552a31.744 31.744 0 0 1-31.60064 31.60064z m0 0"
+                                                      fill="#68b3c8"/>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M841.37984 756.08064H598.09792a31.60064 31.60064 0 1 1 0-63.19104h243.28192a31.60064 31.60064 0 0 1 0 63.19104z m0 0"
+                                                      fill="#FC7265"/>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M719.73888 877.71136A31.68256 31.68256 0 0 1 688.128 846.12096V602.83904a31.60064 31.60064 0 1 1 63.19104 0v243.28192a31.744 31.744 0 0 1-31.5904 31.60064z m0 0"
+                                                      fill="#FC7265"/>
+											</g>
+										</svg>
+                            </div>
+                            <a class="ttt" th:href="@{/login}">登陆</a>
+                            <b> · </b>
+                            <a class="ttt2" href="#">注册</a>
+                        </h4>
+
+                        <div class="contact_form_container">
+                            <form th:action="@{/register}" th:object="${user}" method="post" id="contact_form"
+                                  class="contact_form"  onSubmit="return check(this);">
+                                <input type="text" id="username" name="username" class="contact_input"
+                                       required="required" placeholder="Username">
+                                <input type="text" id="password" name="password" class="contact_input"
+                                       placeholder="Password">
+
+                                <button type="submit" class="button contact_button"><span>注册</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="styles/bootstrap4/popper.js"></script>
+            <script src="styles/bootstrap4/bootstrap.min.js"></script>
+            <script src="plugins/greensock/TweenMax.min.js"></script>
+            <script src="plugins/greensock/TimelineMax.min.js"></script>
+            <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+            <script src="plugins/greensock/animation.gsap.min.js"></script>
+            <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+            <script src="plugins/easing/easing.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+            <script src="js/contact.js"></script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

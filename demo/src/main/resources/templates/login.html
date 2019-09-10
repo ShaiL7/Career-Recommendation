@@ -1,0 +1,126 @@
+<!--&lt;!&ndash;login.html&ndash;&gt;-->
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>登陆</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>欢迎登陆</h1>-->
+<!--&lt;!&ndash;这个地方user也会报错，不用担心&ndash;&gt;-->
+<!--&lt;!&ndash;注意下面name，和id都写上就OK&ndash;&gt;-->
+<!--&lt;!&ndash;/*@thymesVar id="user" type=""*/&ndash;&gt;-->
+<!--<form th:action="@{/login}" th:object="${user}" method="post">-->
+<!--    <label for="username">username:</label>-->
+<!--    <input type="text" name="username"  id="username" />-->
+<!--    <label for="password">password:</label>-->
+<!--    <input type="text" name="password" id="password" />-->
+<!--    <input type="submit" value="submit">-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>登陆</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sublime project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap4/bootstrap.min.css">
+    <link href="/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="/styles/contact_responsive.css">
+</head>
+<script language="JavaScript" type="text/JavaScript">
+    <!--
+    function check(form){
+        //检查姓名是否填写
+        var username = form.username.value;
+        var password = form.password.value;
+        if(username.length==0 || password.length==0){
+            alert("用户名或密码不能为空！");
+            form.username.focus();
+            return false;
+        }
+    }
+    //-->
+</script>
+
+<body>
+
+<div class="super_container">
+
+
+    <!-- Contact -->
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+
+                <!-- Get in touch -->
+                <div class="col-lg-5 back">
+                    <div class="get_in_touch">
+                        <h4 class="section_title">
+                            <div class="col-lg-4 logox">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;"
+                                     xml:space="preserve">
+											<g>
+												<path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M512 549.12c-116.89984 0-211.69152-94.79168-211.69152-211.69152S395.10016 125.7472 512 125.7472s211.69152 94.79168 211.69152 211.69152S628.89984 549.12 512 549.12zM512 187.392a148.48 148.48 0 1 0 148.48 148.48 148.3264 148.3264 0 0 0-148.48-148.48z m0 0"
+                                                      fill="#68b3c8"></path>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M164.4544 898.2528a31.744 31.744 0 0 1-31.60064-31.60064c0-208.52736 170.61888-379.14624 379.14624-379.14624 34.75456 0 118.4768 17.408 150.07744 31.5904 15.80032 7.90528 26.85952 22.1184 22.1184 39.49568s-23.69536 30.01344-39.49568 22.1184c-26.85952-12.62592-104.26368-28.42624-132.70016-28.42624-173.7728 0-315.9552 142.1824-315.9552 315.9552 0 15.80032-14.22336 30.01344-31.60064 30.01344z m0 0"
+                                                      fill="#68b3c8"></path>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                      d="M859.5456 898.2528a31.744 31.744 0 0 1-31.5904-31.60064c0-126.38208-74.25024-240.128-191.15008-290.68288-15.80032-6.31808-23.69536-25.27232-15.80032-41.07264 6.31808-15.80032 25.27232-23.69536 41.07264-15.80032 139.01824 60.03712 229.0688 197.46816 229.0688 347.55584a31.744 31.744 0 0 1-31.60064 31.60064z m0 0"
+                                                      fill="#FC7265"></path>
+											</g>
+										</svg>
+                            </div>
+                            <a class="ttt2" href="">登陆</a>
+                            <b> · </b>
+                            <a class="ttt" th:href="@{/register}">注册</a>
+                        </h4>
+
+                        <div class="contact_form_container">
+                            <form th:action="@{/login}" th:object="${user}" method="post" id="contact_form"
+                                  class="contact_form" onSubmit="return check(this);">
+                                <input type="text" name="username" id="username" class="contact_input"
+                                       required="required" placeholder="Username">
+                                <input type="text" name="password" id="password" class="contact_input"
+                                       placeholder="Password">
+                                <button type="submit" class="button contact_button"><span>登陆</span></button>
+                            </form>
+                            <script>
+                                $(":submit").click(function () {
+                                    if ($(":text").val() == "") {
+                                        alert("请输入用户名");
+                                        window.location.href = "login.html";
+                                    } else
+                                        alert("登录成功!");
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="/js/jquery-3.2.1.min.js"></script>
+            <script src="/styles/bootstrap4/popper.js"></script>
+            <script src="/styles/bootstrap4/bootstrap.min.js"></script>
+            <script src="/plugins/greensock/TweenMax.min.js"></script>
+            <script src="/plugins/greensock/TimelineMax.min.js"></script>
+            <script src="/plugins/scrollmagic/ScrollMagic.min.js"></script>
+            <script src="/plugins/greensock/animation.gsap.min.js"></script>
+            <script src="/plugins/greensock/ScrollToPlugin.min.js"></script>
+            <script src="/plugins/easing/easing.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+            <script src="/js/contact.js"></script>
+</body>
+</html>
